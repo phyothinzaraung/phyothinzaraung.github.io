@@ -1,30 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Phyo Thinzar Aung's Portfoilo</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />-->
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+
+
+        .card {
+            text-align: center;
+            margin: 10px;
+            display: grid;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+            transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+            /*padding: 14px 80px 18px 36px;*/
+            /*padding:10px!important;*/
+            cursor: pointer;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+            }
+
+        .container {
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+            padding-left: 3rem !important;
+            padding-right: 3rem !important
+        }
+
+        .btn-mrg {
+            margin-right: 1.5rem !important
+        }
+
+        @media (max-width: 978px) {
+            .container {
+                padding-top: 2rem !important;
+                padding-bottom: 2rem !important;
+                padding-left: 0rem !important;
+                padding-right: 0rem !important;
+            }
+
+            .sm-mrg {
+                margin: 20px !important
+            }
+
+            .social-icons .social-icon {
+                font-size:1rem!important;
+                margin-right:10px!important;
+                
+            }
+
+            .btn-mrg {
+                margin-right:0.5rem!important
+            }
+        }
+    </style>
+
 </head>
-<body>
-    <img src="./phyo.jpeg" alt="phyo thinzar aung" width="100" height="100" />
-    <h3>Phyo Thinzar Aung</h3>
-    <ul>
-        <li><a href="#">This Homepage</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Homework 1: Grandma's Lemon Meringue Pie</a></li>
-        <li><a href="#">Homework 2: Movie Review</a></li>
-        <li><a href="#">Lab3: My Music Page</a></li>
-        <li><a href="#">Homework 3: Movie Review PHP</a></li>
-        <li><a href="#">Homework 4: NerdLuv</a></li>
-        <li><a href="#">Homework 5: NerdLuv DB</a></li>
-        <li><a href="#">Homework 6: NerdLuv Session</a></li>
-        <li><a href="#">Final Project</a></li>
-    </ul>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Mya Sabai</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/phyo.png" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contactme">Contact me</a></li>
 
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fphyothinzaraung.github.io%2F">
-        <img src="htmlchecker.png" alt="html validator" width="80" height="40" />
-    </a>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about" style="padding-top:1rem!important;padding-bottom:1rem!important;">
+            <div class="resume-section-content">
+                <h2 class="mb-0">
+                    Phyo Thinzar
+                    <span class="text-primary">Aung</span>
+                </h2>
+                <div class="mb-5">
+                    A passionate Android Developer who loves creating interactive application by using up to date technologies.
+                    <a href="mailto:phyothinzaraung.tina@gmail.com">phyothinzaraung.tina@gmail.com</a>.
+                </div>
+                <h3>About Me _</h3>
+                <p class="lead mb-5">
+                        Enthusiastic android developer with more than 6 years’ experience in building <b>android</b> applications. Highly motivated self-learner and proven ability to build android apps from scratch to scale them up as per business needs. 
+                        Additionally, able to use cross platform mobile apps using Flutter and basic knowledge of developing iOS app.
+                </p>
+                <div class="social-icons">
+                    <a href="assets/img/Mya-Sabai-Resume.pdf" target="_blank" style="color:#fff!important;border-radius:15px;margin-bottom:10px;font-size:15px!important;padding:13px!important" class="btn btn-lg bg-primary btn-mrg">Download CV <i class="fas fa-download"></i></a>
+                    <a class="social-icon" target="_blank" style="background-color:#8F52CC!important" href="https://www.linkedin.com/in/phyo-thinzar-aung-38220196/"><i class="fab fa-linkedin-in" style="background-color:#8F52CC!important"></i></a>
+                    <a class="social-icon" target="_blank" style="background-color:#24292F!important" href="https://github.com/phyothinzaraung"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" target="_blank" style="background-color:#8C50CA !important" href="https://twitter.com/MyaSora_1993"><i class="fab fa-twitter"></i></a>
+                    <!--<a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>-->
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
 
+        <hr class="m-0" />
+
+        <hr class="m-0" />
+        <!-- Skills-->
+        <!--<section class="resume-section" id="skills" style="padding-top:2rem!important;padding-bottom:2rem!important">-->
+        <div class="container" id="skills">
+            <h3 style="margin-bottom:1rem" class="sm-mrg">Skills</h3>
+            <div class="mb-3 sm-mrg">Programming Languages and Tools</div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!--<div class="col-md-12">-->
+                    <div class=" card col-3  col-md-1 ">
+
+                        <img src="assets/img/html.svg" class="mx-auto d-block" style="margin-top:10px;width:35px!important;height:35px!important">
+                        <div style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>HTML</b></div>
+
+                    </div>
+                    <div class="card col-3  col-md-1  ">
+
+                        <img src="assets/img/css.svg" class="mx-auto d-block" style="margin-top: 10px; width: 35px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>CSS</b></p>
+
+                    </div>
+                    <div class="card col-3  col-md-1  ">
+
+                        <img src="assets/img/bootstrap.png" class="mx-auto d-block" style="width: 100%; height: 100%; margin-top: 10px">
+                        <p style="margin-bottom: 0px; margin-top: 10px;font-size:0.7rem"><b>Bootstrap</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+
+                        <img src="assets/img/javascript.svg" class="mx-auto d-block" style="margin-top:10px;width:35px!important;height:35px!important">
+                        <p style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>Javascript</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+
+                        <img src="assets/img/jquery.svg" class="mx-auto d-block" style="margin-top: 10px; width: 35px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>JQuery</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+
+                        <img src="assets/img/jwt.jpg" class="mx-auto d-block" style="margin-top: 10px; width: 50px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>JWT</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/devExpress.png" class="mx-auto d-block" style="width:70px;height:35px; margin-top: 10px">
+                        <p style="margin-bottom: 0px; margin-top: 10px;font-size:0.7rem"><b>DevExpress</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/github-2.png" class="mx-auto d-block" style="margin-top:10px;width:50px!important;height:35px!important">
+                        <p style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>Github</b></p>
+                    </div>
+
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/azure-repos.png" class="mx-auto d-block" style="margin-top: 10px; width: 70px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>Azure-repos</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/AtlassianBitbucket.png" class="mx-auto d-block" style="margin-top:10px;width:50px!important;height:35px!important">
+                        <p style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>Bitbucket</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/iis-logo.png" class="mx-auto d-block" style="margin-top: 10px; width: 50px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>IIS</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/cSharp.png" class="mx-auto d-block" style="margin-top:10px;width:60px!important;height:35px!important">
+                        <p style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>C#</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/EfCore.png" class="mx-auto d-block" style="margin-top: 10px; width: 35px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>EFCore</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/api.svg" class="mx-auto d-block" style="margin-top:10px;width:35px!important;height:35px!important">
+                        <p style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>REST API</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/linq.jpeg" class="mx-auto d-block" style="margin-top: 10px; width: 35px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>LINQ</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/sql-server-logo.png" class="mx-auto d-block" style="margin-top:10px;width:35px!important;height:35px!important">
+                        <p style="margin-bottom: 10px; margin-top: 10px; font-size: 0.7rem"><b>Sql Server</b></p>
+                    </div>
+
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/vueJs.png" class="mx-auto d-block" style="margin-top: 10px; width: 50px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>Vue JS</b></p>
+                    </div>
+                    <div class="card col-3  col-md-1">
+                        <img src="assets/img/RedisCache.png" class="mx-auto d-block" style="margin-top: 10px; width: 50px !important; height: 35px !important">
+                        <p style="margin-bottom: 0px; margin-top: 10px; font-size: 0.7rem"><b>Redis Cache</b></p>
+                    </div>
+                </div>
+            </div>
+            <!--</section>-->
+        </div>
+        <hr class="m-0" />
+        <hr class="m-0" />
+        <hr class="m-0" />
+        <div class="container" id="projects">
+            <h3 style="margin-bottom:1rem" class="sm-mrg">
+                Projects
+            </h3>
+
+            <div class="sm-mrg">
+                All of my projects are used <b>Azure App Services</b> for deployment, <b>Azure Database Engine</b> for data storing and <b>Azure Blob Storage</b> for uploading and saving files.
+                <br /> <br />
+                <h6><b>Technologies Used for all projects : </b></h6>
+                <div style="color:blue">
+                    <b>
+                        Asp.Net Web API, MMSQL , Entity Framework, LinQ, DevExpress Reporting Tool,
+                        Asp.Net MVC, HTML5, CSS, Bootstrap 3, Bootstrap 4, JQuery , AJAX, Azure Redis Cache.
+                    </b>
+                </div>
+
+            </div>
+           
+
+            <br />
+
+            <div class="card mb-2" style="text-align: left !important; cursor: auto;padding:10px">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <!--class="img-fluid rounded-start"-->
+                        <img src="assets/img/CISProject.jpg" alt="..." width="70%" style="margin:auto;display:block">
+                    </div>
+                    <div class="col-md-9" style="font-size:15px!important">
+                        <div class="card-body">
+                            <h5 class="card-title">Case Information System</h5>
+                            <div class="card-text" style="font-size:13px!important">
+                                CIS is a case information system in courts throught Mandalay Division. Court clerks enter case information into
+                                the tablet app which sync with a cloud database while staff in Nay Pyi Taw
+                                access dashboard with aggregate and visualize the data.
+
+                                <div class="container-fluid" style="margin-top:2rem">
+                                    <h6><b>Tasks</b></h6>
+                                    <ul>
+                                        <li>
+                                            Work flow analysis about the court data management system together with the team.
+                                        </li>
+                                        <li>
+                                            Designing database design for the whole project.
+                                        </li>
+                                        <li>
+                                            Provide APIs for inserting cases for mobile team and Content Management System.
+                                        </li>
+                                        <li>
+                                            Implement Dashboard for courts for each state and division.
+                                        </li>
+                                        <li>
+                                            Generate the reports for cases using the reporting tool.
+                                        </li>
+                                        <li>
+                                            Fixes bugs and issues, testing, add the new features according to updates.
+                                        </li>
+                                    </ul>
+
+                                    <h6 style="color:blue">Challenges</h6>
+                                    <div>
+                                        <b>
+                                            Research the DevExpress Tool for this specific project and give the kinds of report to get bird's-eye-view of cases .
+                                        </b>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="text-align: left !important; cursor: auto;padding:10px">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <!--class="img-fluid rounded-start"--><!--margin: auto; display: block;-->
+                        <img src="assets/img/MNMAProject.jpg" class="align-middle" alt="..." style=" max-width: 100%; max-height: 100%; vertical-align: middle;">
+                    </div>
+                    <div class="col-md-9" style="font-size:15px!important">
+                        <div class="card-body">
+                            <h5 class="card-title">Registration System</h5>
+                            <div class="card-text" style="font-size:13px!important">
+                                It is the web applications for registration and licensing nurse and midwife organizaitons
+                                including the features of producing periodic and ad-hoc statistics. With this web app,
+                                data entry for registration and licensing has changed from manual writing on paper forms to electronic data entry.
+
+                                <div>
+                                    <b><a href="https://mnmaweb.azurewebsites.net/" target="_blank">https://mnmaweb.azurewebsites.net/</a></b>
+                                </div>
+                                <div>
+                                    <b><a href="https://mnmcweb.azurewebsites.net/" target="_blank">https://mnmcweb.azurewebsites.net/</a></b>
+                                </div>
+                                <div class="container-fluid" style="margin-top:2rem">
+                                    <h6><b>Tasks</b></h6>
+                                    <ul>
+                                        <li>
+                                            Designing the database.
+                                        </li>
+                                        <li>
+                                            Workflow analysis,a static website for their information with responsive design.
+                                        </li>
+                                        <li>
+                                            Admin Panel for staffs of these organizations including features of excel export.
+                                        </li>
+                                        <li>
+                                            Implement relevant search filters to retrieve the desired data within the short time.
+                                        </li>
+                                        <li>
+                                            Implement the whole backend APIs of scalabe and better performance.
+                                        </li>
+                                        <li>
+                                            Fixes bugs and issues, testing
+                                        </li>
+                                    </ul>
+
+                                    <h6 style="color:blue">Challenges</h6>
+                                    <div>
+                                        <b>
+                                            Automatic calculation the age of nurses and midwives for checking their license expired cases and extension using the Quartz .Net
+                                            scheduling system.
+                                        </b>
+                                    </div>
+
+                                    <!--<h6><b>Technologies Used : </b></h6>
+                                    <div style="color:blue">
+                                        <b>
+                                            Asp.Net Web API, MMSQL , Entity Framework, LinQ, DevExpress Reporting Tool,
+                                            Asp.Net MVC, HTML5, CSS, Bootstrap 3, JQuery, AJAX
+                                        </b>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="text-align: left !important; cursor: auto; padding: 10px">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <!--class="img-fluid rounded-start"-->
+                        <img src="assets/img/LannPyaProject.jpg" alt="..." width="100%" style="margin:auto;display:block">
+                    </div>
+                    <div class="col-md-9" style="font-size:15px!important">
+                        <div class="card-body">
+                            <h5 class="card-title"> LannPya Project</h5>
+                            <div class="card-text" style="font-size:13px!important">
+                                LannPya provides the Myanmar public with
+                                relevant, accessible, know-your-rights information, empowering them
+                                with the knowledge to better understand and protect their rights.
+
+                                <div class="container-fluid" style="margin-top:2rem">
+
+                                    <h6><b>Tasks</b></h6>
+                                    <ul>
+                                        <li>
+                                            Designing the database.
+                                        </li>
+                                        <li>
+                                            Provide APIs for CMS and andriod application including quizzes features to learn more about law and rights.
+                                        </li>
+                                        <li>
+                                            Storing the data with different languages.
+                                        </li>
+                                        <li>
+                                            Static website for public with five languages.
+                                        </li>
+                                    </ul>
+
+                                    <h6 style="color:blue">Challenges</h6>
+                                    <div>
+                                        <b>
+                                           Push notification feature to andriod application from backend using .Net Web API framework.
+                                        </b>
+                                    </div>
+
+                                    <!--<h6><b>Technologies Used : </b></h6>-->
+                                    <!--<div style="color:blue">
+        <b>
+            Asp.Net Web API, MMSQL , Entity Framework, LinQ, DevExpress Reporting Tool,
+            Asp.Net MVC, HTML5, CSS, Bootstrap 3, JQuery, AJAX
+        </b>
+    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-2" style="text-align: left !important; cursor: auto; padding: 10px">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <!--class="img-fluid rounded-start"-->
+                        <img src="assets/img/MeekinPhoto.jpg" alt="..." width="100%" style="margin:auto;display:block">
+                    </div>
+                    <div class="col-md-9" style="font-size:15px!important">
+                        <div class="card-body">
+                            <h5 class="card-title"> Meekin Project (Hate Speech Platform )</h5>
+                            <div class="card-text" style="font-size:13px!important">
+                                Meekin is intended to develop an algorithm which can identify,
+                                prioritise and triage cases of hate speech on
+                                Socail Media in Myanmar. We will then an open source platform to track the generation and
+                                spread of hate speech
+                                on Facebook. assist FB/CSOs/NGOs and their staff in their work
+                                to monitor, track, and notify Facebook of hate
+                                speech, coordinated propaganda, and
+                                misinformation campaigns.
+
+                                <div class="container-fluid" style="margin-top:2rem">
+                                    <h6><b>Tasks</b></h6>
+                                    <ul>
+                                        <li>
+                                            Backend APIs development for the whole project including socail media data labelling, providing reports based
+                                            on the hate speech problems, getting feedback from end users, showing dashboard features of labelled contents.
+                                        </li>
+                                        <li>
+                                            Browser Extension feature to report easily.
+                                        </li>
+                                        <li>
+                                            Fixing issuses and adding new features according to updates.
+                                        </li>
+                                    </ul>
+
+                                    <h6 style="color:blue">Challenges</h6>
+                                    <div>
+                                        <b>
+                                            Using SQL indexing to do the quick look up database and using Azure Redis Cache to boost the application performance.
+                                        </b>
+                                    </div>
+                                    <!--<h6><b>Technologies Used : </b></h6>-->
+                                    <!--<div style="color:blue">
+        <b>
+            Asp.Net Web API, MMSQL , Entity Framework, LinQ, DevExpress Reporting Tool,
+            Asp.Net MVC, HTML5, CSS, Bootstrap 3, JQuery, AJAX , Azure Redis Cache.
+        </b>
+    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr class="m-0" />
+        <hr class="m-0" />
+        <hr class="m-0" />
+        <div class="container" id="contactme">
+            <h3 style="margin-bottom:1rem" class="sm-mrg">
+                Contact me
+            </h3>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card mb-2" style="cursor: auto;padding:20px!important">
+
+                        <div class="mx-auto d-block list-inline-item">
+                            <i class="fas fa-envelope fa-lg" style="font-size:3rem!important"></i>
+                        </div>
+
+                        <div class="mx-auto d-block" style="margin-top:20px!important">
+                            <a href="mailto:phyothinzaraung.tina@gmail.com"><b>phyothinzaraung.tina@gmail.com</b></a>
+                            <div>Email me</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="card mb-2" style="cursor: auto;padding:20px!important">
+
+                        <div class="mx-auto d-block list-inline-item">
+                            <i class="fas fa-phone fa-lg" style="font-size:3rem!important"></i>
+                        </div>
+
+                        <div class="mx-auto d-block" style="margin-top:20px!important">
+                            <a href="#"><b>(641) 233-9542</b></a>
+                            <div>Phone No</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Awards-->
+
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
