@@ -32,3 +32,40 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    // Show loading message
+    document.getElementById('loadingMessage').style.display = 'block';
+    document.getElementById('successMessage').style.display = 'none';
+    document.getElementById('errorMessage').style.display = 'none';
+
+    const formData = {
+        guestName: document.getElementById('guestName').value,
+        email: document.getElementById('email').value,
+        messageTitle: document.getElementById('messageTitle').value,
+        message: document.getElementById('message').value
+    };
+
+    try {
+        const response = await fetch('https://your-api-endpoint.amazonaws.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('contactForm').reset(); // Reset the form after success
+        } else {
+            throw new Error('Failed to send message.');
+        }
+    } catch (error) {
+        document.getElementById('errorMessage').style.display = 'block';
+    } finally {
+        document.getElementById('loadingMessage').style.display = 'none';
+    }
+});
