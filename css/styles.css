@@ -11436,7 +11436,6 @@ section.resume-section .resume-section-content {
 }
 
 #contactForm {
-  background: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -11472,7 +11471,7 @@ section.resume-section .resume-section-content {
   cursor: pointer;
   transition: background-color 0.3s ease;
   height: 40px; 
-  width: 30%;
+  width: 40%;
   line-height: 1; 
 }
 
