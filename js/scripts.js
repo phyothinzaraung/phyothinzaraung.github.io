@@ -68,7 +68,9 @@ document.getElementById('contactForm').addEventListener('submit', async function
         } else {
             // Show an error message if the success field is not true
             console.error('Error:', responseData.message || 'Failed to send message.');
-            document.getElementById('errorMessage').style.display = 'block';
+            //document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('contactForm').reset();
         }
     } catch (error) {
         // Handle any errors that occur during the fetch
