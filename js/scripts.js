@@ -42,14 +42,14 @@ document.getElementById('contactForm').addEventListener('submit', async function
     document.getElementById('errorMessage').style.display = 'none';
 
     const formData = {
-        guestName: document.getElementById('guestName').value,
+        name: document.getElementById('guestName').value,
         email: document.getElementById('email').value,
         messageTitle: document.getElementById('messageTitle').value,
         message: document.getElementById('message').value
     };
 
     try {
-        const response = await fetch('https://your-api-endpoint.amazonaws.com/submit', {
+        const response = await fetch('https://db3c2xb379.execute-api.us-east-1.amazonaws.com/v1/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
