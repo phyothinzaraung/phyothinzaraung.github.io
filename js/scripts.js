@@ -57,15 +57,25 @@ document.getElementById('contactForm').addEventListener('submit', async function
             body: JSON.stringify(formData)
         });
 
-        if (response.ok) {
+        // Log the entire response for debugging
+        console.log(response);
+
+        // Parse response body to check for specific success criteria
+        const responseData = await response.json();
+        console.log(responseData);
+
+        if (response.ok && responseData.success) {
             document.getElementById('successMessage').style.display = 'block';
             document.getElementById('contactForm').reset(); // Reset the form after success
         } else {
-            throw new Error('Failed to send message.');
+            console.error('Error:', responseData.message || 'Failed to send message.');
+            document.getElementById('errorMessage').style.display = 'block';
         }
     } catch (error) {
+        console.error('Catch Error:', error);
         document.getElementById('errorMessage').style.display = 'block';
     } finally {
         document.getElementById('loadingMessage').style.display = 'none';
     }
 });
+
