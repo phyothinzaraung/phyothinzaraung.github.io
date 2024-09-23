@@ -57,13 +57,11 @@ document.getElementById('contactForm').addEventListener('submit', async function
             body: JSON.stringify(formData)
         });
 
-        // Log the entire response for debugging
-        console.log(response);
-
-        // Parse response body to check for specific success criteria
+        // Parse the response as JSON
         const responseData = await response.json();
-        console.log(responseData);
+        console.log(responseData); // Debug the parsed response
 
+        // Check for success in the response
         if (response.ok && responseData.success) {
             document.getElementById('successMessage').style.display = 'block';
             document.getElementById('contactForm').reset(); // Reset the form after success
@@ -78,4 +76,5 @@ document.getElementById('contactForm').addEventListener('submit', async function
         document.getElementById('loadingMessage').style.display = 'none';
     }
 });
+
 
