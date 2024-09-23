@@ -57,24 +57,28 @@ document.getElementById('contactForm').addEventListener('submit', async function
             body: JSON.stringify(formData)
         });
 
-        // Parse the response as JSON
+        // Attempt to parse the response body as JSON
         const responseData = await response.json();
-        console.log(responseData); // Debug the parsed response
+        console.log(responseData); // Debug log the parsed response
 
-        // Check for success in the response
+        // Check if the response has success set to true
         if (response.ok && responseData.success) {
             document.getElementById('successMessage').style.display = 'block';
-            document.getElementById('contactForm').reset(); // Reset the form after success
+            document.getElementById('contactForm').reset(); // Reset the form upon success
         } else {
+            // Show an error message if the success field is not true
             console.error('Error:', responseData.message || 'Failed to send message.');
             document.getElementById('errorMessage').style.display = 'block';
         }
     } catch (error) {
+        // Handle any errors that occur during the fetch
         console.error('Catch Error:', error);
         document.getElementById('errorMessage').style.display = 'block';
     } finally {
+        // Hide the loading message after the request completes
         document.getElementById('loadingMessage').style.display = 'none';
     }
 });
+
 
 
