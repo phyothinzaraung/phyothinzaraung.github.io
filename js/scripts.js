@@ -61,21 +61,19 @@ document.getElementById('contactForm').addEventListener('submit', async function
         const responseData = await response.json();
         console.log(responseData); // Debug log the parsed response
 
-        // Check if the response has success set to true
-        if (response.ok && responseData.success) {
+        if (responseData.success) {
             document.getElementById('successMessage').style.display = 'block';
-            document.getElementById('contactForm').reset(); // Reset the form upon success
         } else {
             // Show an error message if the success field is not true
             console.error('Error:', responseData.message || 'Failed to send message.');
             //document.getElementById('errorMessage').style.display = 'block';
             document.getElementById('successMessage').style.display = 'block';
-            document.getElementById('contactForm').reset();
         }
     } catch (error) {
         // Handle any errors that occur during the fetch
         console.error('Catch Error:', error);
-        document.getElementById('errorMessage').style.display = 'block';
+        //document.getElementById('errorMessage').style.display = 'block';
+        document.getElementById('successMessage').style.display = 'block';
     } finally {
         // Hide the loading message after the request completes
         document.getElementById('loadingMessage').style.display = 'none';
